@@ -1,3 +1,4 @@
+import entities.Storage;
 import org.testng.annotations.DataProvider;
 import webdriver.Properties;
 import org.apache.logging.log4j.*;
@@ -5,6 +6,8 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
+import java.io.IOException;
 
 @CucumberOptions(
         strict = true,
@@ -18,6 +21,7 @@ import org.testng.annotations.BeforeClass;
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     private static Logger log;
+    Storage storage = new Storage();
     static {
         Properties.setProperties();
         log = LogManager.getLogger(TestRunner.class);
@@ -25,13 +29,15 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     }
 
     @BeforeClass
-    public void beforeClass() {
+    public void beforeClass() throws IOException {
         log.info("Запуск тестового класса");
+        storage.readHashMapFromFile();
     }
 
     @AfterClass
-    public void afterClass() {
+    public void afterClass() throws IOException {
         log.info("класс капут");
+//        storage.saveHashMapToFile();
     }
 
     @Override

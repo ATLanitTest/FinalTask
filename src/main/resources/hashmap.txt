@@ -1,0 +1,30 @@
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (22b5df6366e5be66b896295a6acccf3b)] -> xpath: //button[text()='Войти']]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (22b5df6366e5be66b896295a6acccf3b)] -> xpath: //button[@type='submit']]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (1c03dd73dad6bb08f3ff2e80d1b0bcf8)] -> xpath: //button[@class='btn btn-primary btn-block btn-outline']]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (22b5df6366e5be66b896295a6acccf3b)] -> xpath: //img[@class="user-avatar"]]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (dbcb000336de43892c2ddc10e5bbe88f)] -> xpath: //button[@class='btn btn-primary btn-block btn-outline']]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (eefa416363326d5b0c83505fbb3f5871)] -> xpath: //button[text()='Войти']]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (eefa416363326d5b0c83505fbb3f5871)] -> xpath: //button[@type='submit']]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (8254b51f3986226d803a7bee1b64dd06)] -> xpath: //button[@class='btn btn-primary btn-block btn-outline']]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (beda6533e5bdd5e9659d2212ec70f96d)] -> xpath: //button[@class='btn btn-primary btn-block btn-outline']]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (eefa416363326d5b0c83505fbb3f5871)] -> xpath: //img[@class="user-avatar"]]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (e010f06c30f5c5dd3bb929a1fa50a29c)] -> xpath: //button[text()='Войти']]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (e010f06c30f5c5dd3bb929a1fa50a29c)] -> xpath: //button[@type='submit']]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (e010f06c30f5c5dd3bb929a1fa50a29c)] -> xpath: //img[@class="user-avatar"]]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (3a304d19053d79238bcfee251ad3550e)] -> xpath: //button[@class='btn btn-primary btn-block btn-outline']]
+PAGE_MAIN
+[[ChromeDriver: chrome on WINDOWS (b0343cee85ed6d19be597493df185ab9)] -> xpath: //button[@class='btn btn-primary btn-block btn-outline']]

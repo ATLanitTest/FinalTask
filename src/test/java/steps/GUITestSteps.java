@@ -1,6 +1,7 @@
 package steps;
 
 import entities.PagesProvider;
+import entities.Storage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,6 +17,8 @@ import webdriver.DriverFactory;
 import webdriver.SharedDriver;
 import java.io.IOException;
 
+import static entities.Enums.PAGE_MAIN;
+
 
 public class GUITestSteps {
     private final Logger log = LogManager.getLogger(getClass());
@@ -23,6 +26,8 @@ public class GUITestSteps {
     // private TestPageThemes pageThemes = new TestPageThemes();
     PagesProvider pagesProvider = new PagesProvider();
     String currentURL = null;
+
+    Storage storage = new Storage();
 
     /**
      * @param driver
@@ -58,7 +63,8 @@ public class GUITestSteps {
         try {
             new WebDriverWait(DriverFactory.getDriver(), 30).until(ExpectedConditions.elementToBeClickable(pagesProvider.getElementOnPage(nameOfPage, nameOfElement)));
             pagesProvider.getElementOnPage(nameOfPage, nameOfElement).click();
-        } catch (TimeoutException e) {
+            storage.putStorageData(PAGE_MAIN.toString(), pagesProvider.getElementOnPage(nameOfPage, nameOfElement));
+        } catch (TimeoutException | IOException e) {
             Assert.fail(nameOfElement + " не доступна! " + e.getMessage());
         } finally {
             addScreenshot(nameOfElement);
